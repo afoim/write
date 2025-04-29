@@ -14,6 +14,7 @@ lang: ''
 # 经实测，Zerotier的打洞能力明显优于Tailscale，所以建议通过Zerotier来实现内网穿透
 
 详细报表：
+
 | | Zerotier | Tailscale |
 | ----------- | ----------- | ----------- |
 | 单端DMZ（单端NAT1） | STUN |STUN |

@@ -40,13 +40,22 @@
         .post a {
             color: #fff;
         }
-        .main img {
+        .main img,
+        .post img {
             display: block;
             margin: 0 auto;
             max-width: 100%;
             max-height: 60vh;
             width: auto;
             height: auto;
+        }
+        /* 新增：为Markdown表格添加边框 */
+        .post table, .post th, .post td {
+            border: 1px solid #888;
+            border-collapse: collapse;
+        }
+        .post th, .post td {
+            padding: 0.5em 1em;
         }
     </style>
 </head>

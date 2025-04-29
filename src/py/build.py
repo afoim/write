@@ -32,10 +32,10 @@ def render_template(template, mapping):
     return re.sub(r'\{\{\{(.*?)\}\}\}', repl, template)
 
 def md_body_to_html(md_body):
-    # 支持嵌套无序/有序列表
+    # 支持嵌套无序/有序列表和表格
     html_content = markdown.markdown(
         md_body,
-        extensions=['fenced_code', 'extra']
+        extensions=['fenced_code', 'extra', 'tables']
     )
     # 替换 <blockquote><p>内容</p></blockquote> 为 <p> | 内容</p>
     html_content = re.sub(

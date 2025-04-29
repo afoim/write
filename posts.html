@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts - AcoFork Blog</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff; /* 新增：设置文字为白色 */
+        }
+        .main {
+            text-align: center;
+            padding: 0.5em 1.5em; /* 新增：增加内边距 */
+        }
+        .main span {
+            padding: 0.5em 1.5em; /* 新增：增加内边距 */
+        }
+        .main a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .main a:hover {
+            text-decoration: underline;
+        }
+        .main a.active {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span><a href="/">Home</a></span>
+        <span><a href="/posts.html" class="active">Posts</a></span>
+        <span><a href="/about.html">About</a></span>
+        <hr>
+    </div>
+
+    <div class="main" id="posts">
+        <table border="1" cellpadding="0" cellspacing="0" style="width:100%;max-width:800px;table-layout:auto;word-break:break-all;margin:0 auto;">
+            <tr>
+                <td rowspan="2" style="width:30%;"><img style="width:100%;height:auto;display:block;" align="left" src="{{{img}}}" alt="{{{title}}}"></td>
+                <td style="word-break:break-all;"><a href="{{{/posts/[slug].html}}}">{{{title}}} - {{{date}}}</a></td>
+            </tr>
+            <tr>
+                <td>{{{summry}}}</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+</body>
+</html>

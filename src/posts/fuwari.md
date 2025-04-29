@@ -86,7 +86,7 @@ lang: ''
    
    - 这里我附上我的 `config.ts` 
    
-   - ```ts
+```ts
      import type {
        LicenseConfig,
        NavBarConfig,
@@ -180,7 +180,7 @@ lang: ''
        name: 'CC BY-NC-SA 4.0',
        url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
      }
-     ```
+```
 
 2. 清理多余文件。在根目录下的 `src/content/posts` 文件夹中会有一些示例文章，这些文章介绍了一些MarkDown语法和技巧，可以让你更快上手Fuwari和fuwari，我们可以将其保存到别处
 
